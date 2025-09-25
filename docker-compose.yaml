@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 
 services:
   base: &base
@@ -17,10 +17,9 @@ services:
 
   rails:
     <<: *base
-    build:
-      context: .
-      dockerfile: ./docker/dockerfiles/rails.Dockerfile
-    image: chatwoot-rails:development
+#    build:
+#      context: .
+#      dockerfile: ./docker/dockerfiles/rails.Dockerfile
     volumes:
       - ./:/app:delegated
       - node_modules:/app/node_modules
