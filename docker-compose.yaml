@@ -61,11 +61,11 @@ services:
     command: ["bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
 
   vite:
-    <<: *base
+#    <<: *base
     build:
       context: .
       dockerfile: ./docker/dockerfiles/vite.Dockerfile
-    image: chatwoot-vite:development
+#    image: chatwoot-vite:development
     volumes:
       - ./:/app:delegated
       - node_modules:/app/node_modules
