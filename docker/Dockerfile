@@ -149,4 +149,8 @@ COPY --from=pre-builder /app/.git_sha /app/.git_sha
 
 WORKDIR /app
 
+RUN if [ -f "docker/entrypoints/rails.sh" ]; then chmod +x docker/entrypoints/rails.sh; fi
+RUN if [ -f "docker/entrypoints/vite.sh" ]; then chmod +x docker/entrypoints/vite.sh; fi
+
+
 EXPOSE 3000
