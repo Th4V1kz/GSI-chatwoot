@@ -1,4 +1,5 @@
 #!/bin/sh
+#teste
 set -x
 
 rm -rf /app/tmp/pids/server.pid

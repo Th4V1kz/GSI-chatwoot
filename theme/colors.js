@@ -102,6 +102,18 @@ export const colors = {
     800: violetDark.violet6,
     900: violet.violet12,
   },
+  whatsapp: {
+    50: '#E6F9F0',
+    100: '#CCF3DE',
+    200: '#A1E7C3',
+    300: '#75DAA8',
+    400: '#49CE8E',
+    500: '#25D366',
+    600: '#1BB857',
+    700: '#128C47',
+    800: '#0A6132',
+    900: '#053A1F',
+  },
 
   // next design system color
   n: {
